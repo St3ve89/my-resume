@@ -1,0 +1,19 @@
+-
+    var myFullName = 'Istvan Acs'
+    var myJobTitle = 'Junior Web Developer'
+    var socialList = [
+        {icon: 'facebook2', url: 'https://www.facebook.com/istvan.acs.524'},
+        {icon: 'youtube', url: 'https://www.youtube.com/channel/UCZ-bLe77TumAekQ_51q6TXg?view_as=subscriber'},
+        {icon: 'github', url: 'https://github.com/St3ve89'},
+        {icon: 'google2', url: 'https://plus.google.com/101747697162990744354?hl=hu'},
+    ]
+#landing-page
+.landing-page
+    .landing-page__wrapper
+        h1.landing-page__name=myFullName
+        h2.landing-page__title=myJobTitle
+        ul.landing-page__social
+            each social in socialList
+                li.landing-page__item
+                    label.landing-page__label(for="")
+                        span(class=`my-resume__icon--${social.icon}`)
