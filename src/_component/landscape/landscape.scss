@@ -7,7 +7,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: $color-manatee;
+    background-image: radial-gradient(#48c6ef, #6f86d6);
     transition: 0.25s;
 }
 .landscape__button {
@@ -16,12 +16,13 @@
     color: $color-white;
     position: fixed;
     top: 1rem;
-    left: 1rem;
-    font-size: 2rem;
+    right: 1rem;
+    font-size: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
     text-decoration: none;
     border: 0.1rem solid $color-white;
+    cursor: pointer;
 }
 
 .landscape__description {
@@ -34,7 +35,7 @@
         align-items: center;
         justify-content: center;
         color: $color-white;
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .landscape__list{
         list-style-type: disc;
