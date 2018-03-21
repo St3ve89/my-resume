@@ -40,13 +40,19 @@
         list-style-type: disc;
     }
     .landscape__message--show {
+        display: none;
+    }
+    .landscape__message--hide {
         display: block;
     }
     #landscape:checked + .landscape {
         top: -100%;
-    }
-    .landscape__message--hide {
-        display: none;
+        .landscape__message--show {
+            display: block;
+        }
+        .landscape__message--hide {
+            display: none;
+        }
     }
 
 }
